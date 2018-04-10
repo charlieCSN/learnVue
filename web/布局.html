@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url("//unpkg.com/element-ui@2.3.3/lib/theme-chalk/index.css");
+    </style>
+</head>
+<body>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.3.3/lib/index.js"></script>
+<div id="app">
+    <el-input v-model="input" placeholder="请输入内容"></el-input>
+</div>
+<script>
+    var Main = {
+        data() {
+            return {
+                input: ''
+            }
+        }
+    }
+    var Ctor = Vue.extend(Main)
+    new Ctor().$mount('#app')
+</script>
+</body>
+</html>
+
+
